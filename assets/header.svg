@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070d"/><stop offset="1" stop-color="#0b1222"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4d8dff"/><stop offset="1" stop-color="#3ee0a8"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1a2440" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.82" cy="0.45" r="0.45">
+      <stop offset="0" stop-color="#4d8dff" stop-opacity="0.35"/><stop offset="1" stop-color="#4d8dff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="300" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="18" fill="url(#grid)" opacity="0.55"/>
+  <rect width="1200" height="300" rx="18" fill="url(#glow)"/>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+    <text x="64" y="86" fill="#3ee0a8" font-size="18">$ whoami</text>
+    <text x="64" y="150" fill="#e8f0ff" font-size="56" font-weight="700" font-family="Segoe UI,Helvetica,Arial,sans-serif">Bryan Gomero</text>
+    <text x="64" y="194" fill="#9fb3d9" font-size="22" font-family="Segoe UI,Helvetica,Arial,sans-serif">AI Engineer · Security · Platform</text>
+    <rect x="64" y="216" width="330" height="4" rx="2" fill="url(#acc)"/>
+    <text x="64" y="256" fill="#6f84ad" font-size="16">IA aplicada · seguridad ofensiva y defensiva · ingeniería de plataformas</text>
+  </g>
+  <g transform="translate(905 150)">
+    <circle r="92" fill="none" stroke="#1f2d52" stroke-width="2"/>
+    <circle r="92" fill="none" stroke="url(#acc)" stroke-width="3" stroke-dasharray="120 460" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="64" fill="none" stroke="#1f2d52" stroke-width="2" stroke-dasharray="4 8">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="24s" repeatCount="indefinite"/>
+    </circle>
+    <path d="M0 -40 L32 -27 V4 C32 26 17 40 0 47 C-17 40 -32 26 -32 4 V-27 Z" fill="#0f1a33" stroke="#4d8dff" stroke-width="3"/>
+    <path d="M-13 3 L-3 13 L15 -9" fill="none" stroke="#3ee0a8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle r="4" fill="#3ee0a8" cx="0" cy="-92">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
